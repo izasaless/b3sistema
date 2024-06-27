@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   /* global.css */
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+input[type='url'],
+textarea {
+  border-radius: 32px; /* Define o raio dos cantos */
+  border: 1px solid #e2e8f0; /* Estilo da borda */
+  outline: none; /* Remove o contorno ao focar */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transição suave para a borda */
+}
+
+/* Estilize o estado focado e hover se necessário */
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='url']:focus,
+textarea:focus {
+  border-color: #4a90e2; /* Cor da borda ao focar */
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2); /* Sombra ao focar */
+}
+
+
+   
+    
+  }
+
+  
+ 
+
+  
+
+
+  
+  
+  
+  

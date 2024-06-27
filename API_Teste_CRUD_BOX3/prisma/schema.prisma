@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Usuario {
+  id         String   @id @default(uuid())
+  email      String   @unique
+  cpf        String   @unique
+  telefone   String
+  nome       String
+  categoria  String
+  status     Boolean
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("usuarios")
+}
+
+model Cliente {
+  id         String   @id @default(uuid())
+  nome       String
+  cpf        String   @unique
+  telefone   String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("clientes")
+}
+
+model Cargo {
+  id           String        @id @default(uuid())
+  descricao    String
+  created_at   DateTime      @default(now())
+  updated_at   DateTime      @updatedAt
+  funcionarios Funcionario[]
+
+  @@map("cargos")
+}
+
+model Tarefa {
+  id         String   @id @default(uuid())
+  descricao  String
+  status     String
+  duracao    DateTime
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tarefas")
+}
+
+model Funcionario {
+  id         String   @id @default(uuid())
+  nome       String
+  cpf        String   @unique
+  telefone   String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  cargoId    String
+  cargo      Cargo    @relation(fields: [cargoId], references: [id])
+
+  @@map("funcionarios")
+}
