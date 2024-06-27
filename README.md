@@ -56,33 +56,52 @@ Durante o desenvolvimento enfretei algumas dificuldades envolvendo as tecnologia
 
 Para instalar o Node.js, é necessário seguir alguns passos básicos, dependendo do sistema operacional que você está utilizando:
 
-### Instalação do Node.js
+Para adicionar um passo a passo de como rodar a aplicação no README, siga esta estrutura básica adaptada ao seu projeto:
+
+---
+
+# Sistema de Controle de Tarefas e Funcionários
+
+Este projeto foi desenvolvido durante o processo de seleção para estágio na Empresa BOX-3.
+
+## Progresso do Projeto
+
+...
+
+## Como Rodar a Aplicação
+
+Para rodar a aplicação localmente, siga os passos abaixo:
+
+### Pré-requisitos
+
+Antes de começar, certifique-se de ter o Node.js e o npm instalados em seu sistema. Se não tiver, siga os passos de instalação conforme mencionado anteriormente.
+
+### Passos
+
+1. **Clone o Repositório:**
+   ```
+   git clone https://github.com/izasaless/b3sistema.git
+   ```
+
+2. **Instale as Dependências:**
+   ```
+   cd b3sistema
+   npm install
+   ```
+
+3. **Inicie o Servidor de Desenvolvimento:**
+   ```
+   npm run dev
+   ```
+
+4. **Acesse a Aplicação:**
+   - Abra seu navegador e acesse `http://localhost:5173 (ou a porta configurada, se diferente).
+
+### Observações
+
+- Certifique-se de que o servidor de desenvolvimento esteja rodando corretamente e não haja erros no console do seu terminal.
+- Se necessário, ajuste as configurações de porta ou outras variáveis de ambiente no arquivo de configuração correspondente (`env`, `config.js`, etc.).
 
 
-
-#### Linux (via terminal):
-
-1. **Usando apt (Ubuntu, Debian):**
-   - Abra o Terminal e execute os seguintes comandos:
-     ```
-     sudo apt update
-     sudo apt install nodejs
-     sudo apt install npm
-     ```
-
-2. **Usando yum (Fedora, CentOS):**
-   - Abra o Terminal e execute os seguintes comandos:
-     ```
-     sudo yum install nodejs
-     sudo yum install npm
-     ```
-
-3. **Verificar a Instalação:**
-   - No Terminal, digite `node -v` e pressione Enter para verificar a versão do Node.js instalada.
-   - Digite `npm -v` e pressione Enter para verificar a versão do npm instalada.
-
-### Conclusão
-
-Após seguir esses passos, você terá o Node.js e o npm instalados em seu sistema, permitindo que você desenvolva e execute aplicativos JavaScript, incluindo projetos baseados em React e outros frameworks modernos.
 
 
