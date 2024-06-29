@@ -58,7 +58,7 @@ Para rodar a aplicação localmente, siga os passos abaixo:
 
 ### Pré-requisitos
 
-Antes de começar, certifique-se de ter o Node.js e o npm instalados em seu sistema. Se não tiver, siga os passos de instalação conforme mencionado anteriormente.
+Antes de começar, certifique-se de ter o Node.js e o npm instalados em seu sistema. Se não tiver, siga os passos de instalação.
 
 ### Passos
 
