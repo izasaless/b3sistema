@@ -52,22 +52,6 @@ Durante o desenvolvimento enfretei algumas dificuldades envolvendo as tecnologia
 - Aprendizado a cerca de componentes reutilizáveis no React.
 
 
-## Instalação do Node.js
-
-Para instalar o Node.js, é necessário seguir alguns passos básicos, dependendo do sistema operacional que você está utilizando:
-
-Para adicionar um passo a passo de como rodar a aplicação no README, siga esta estrutura básica adaptada ao seu projeto:
-
----
-
-# Sistema de Controle de Tarefas e Funcionários
-
-Este projeto foi desenvolvido durante o processo de seleção para estágio na Empresa BOX-3.
-
-## Progresso do Projeto
-
-...
-
 ## Como Rodar a Aplicação
 
 Para rodar a aplicação localmente, siga os passos abaixo:
